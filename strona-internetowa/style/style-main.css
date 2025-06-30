@@ -1,0 +1,248 @@
+body {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+
+	display: flex;
+	flex-direction: row;
+	gap: 0;
+
+	
+	background-color: #EFE4D2;
+}
+
+header {
+	width: 300px;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+
+	background-color: #131D4F;
+	
+	font-family: 'Courier New';
+	color: #ffffff;
+}
+
+header h1 {
+	margin: 5% 10% 20px 10%;
+
+	font-size: 30px;
+}
+
+h1 a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+nav {
+	margin: 40px 10% 0 10%;
+	margin-bottom: auto;
+	padding: 0;
+
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+nav a {
+	margin: 0 auto 0 0;
+	cursor: pointer;
+	font-size: 20px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+.active {
+	font-weight: bold;
+}
+
+address {
+	margin: 0 10% 0 10%;
+	padding: 0;
+
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+address p {
+	margin: 0;
+	cursor: pointer;
+	font-size: 15px;
+}
+
+.copy-msg {
+	position: fixed;
+	padding: 5px;
+	z-index: 9999;
+	display: none;
+	pointer-events: none;
+
+	background-color: #254D70;
+	opacity: 0.85;
+	color: #ffffff;
+	border: none;
+	font-size: 15px;
+
+	animation: fadein 0.2s;
+}
+
+@keyframes fadein {
+	from {opacity: 0;}
+	to {opacity: 0.85;}
+}
+
+.socials-box {
+	width: 100%;
+
+	margin: 0 auto 5% 0;
+	padding: 0px;
+
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+}
+
+.socials-box a img {
+	height: 30px;
+}
+
+main {
+	flex: 1;
+	height: 100%;
+	margin: 0;
+	overflow-y: auto;
+
+	display: flex;
+	flex-direction: row;
+}
+
+section {
+	width: calc(100% - 40px);
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+article {
+	width: calc(100% - 20px);
+	padding: 10px;
+
+	background-color: #ffffff;
+	border: none;
+	border-radius: 10px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+
+	font-family: 'Courier New';
+	color: #000000;
+}
+
+aside {
+	width: 30%;
+	margin: 20px 20px auto 0;
+	padding: 10px;
+
+	background-color: #ffffff;
+	border: none;
+	border-radius: 10px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+
+	font-family: 'Courier New';
+	color: #000000;
+}
+
+h2 {
+	margin: 0;
+	font-size: 25px;
+	cursor: default;
+}
+
+button {
+	margin-right: auto;
+	padding: 5px;
+
+	background-color: #254D70;
+	border: none;
+	border-radius: 2px;
+	color: #ffffff;
+
+	font-family: 'Courier New';
+	font-size: 15px;
+
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #131D4F;
+}
+
+p {
+	margin: 0;
+	font-size: 15px;
+}
+
+h3 {
+	margin: 0;
+	font-size: 20px;
+}
+
+ul {
+	margin: 0;
+	list-style: square;
+}
+
+li + li {
+	margin-top: 10px;
+}
+
+li ul li {
+	margin: 0;
+}
+
+h1 {
+	margin: 0;
+	font-family: 'Courier New';
+	font-size: 30px;
+	color: #000000;
+}
+
+hr {
+	width: 100%;
+	border: 2px solid #000000;
+}
+
+.title-div {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.title-div img {
+	margin-left: auto;
+	height: 30px;
+	cursor: pointer;
+	transition: transform 0.3s ease;
+}
+
+.arrow-icon.rotated {
+	transform: rotate(180deg);
+}
+
+.hidden-content {
+	width: 100%;
+}
