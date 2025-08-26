@@ -1,82 +1,82 @@
-body {
-	width: 100vw;
-	height: 100vh;
+html, body {
+	width: 100%;
+	height: 100%;
 	margin: 0;
-
-	display: flex;
-	flex-direction: row;
-	gap: 0;
-
-	
-	background-color: #EFE4D2;
 }
 
 header {
-	width: 300px;
-	height: 100%;
-	margin: 0;
-	padding: 0;
-
-	display: flex;
-	flex-direction: column;
-	gap: 5px;
+	width: 100%;
+	min-height: 150px;
+	overflow: none;
 
 	background-color: #131D4F;
-	
-	font-family: 'Courier New';
-	color: #ffffff;
+}
+
+.visible-header {
+	width: 100%;
+	height: 150px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	background-color: transparent;
 }
 
 header h1 {
-	margin: 5% 10% 20px 10%;
-
-	font-size: 30px;
+	width: 50%;
+	margin: 0 0 0 10px;
 }
 
-h1 a {
-	color: #ffffff;
+header h1 a {
+	font-family: "Courier New";
+	font-size: 35px;
 	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.menu-icon {
+	height: 50px;
+	margin: 0 10px 0 0;
+}
+
+.cancel-icon {
+	display: none;
+
+	height: 50px;
+	margin: 0 10px 0 0;
+}
+
+polygon {
+	fill: #FFFFFF;
+}
+
+.hidden-menu {
+	display: none;
+	flex-direction: column;
 }
 
 nav {
-	margin: 40px 10% 0 10%;
-	margin-bottom: auto;
-	padding: 0;
-
 	display: flex;
 	flex-direction: column;
 	gap: 5px;
+
+	width: 100%;
 }
 
 nav a {
-	margin: 0 auto 0 0;
-	cursor: pointer;
-	font-size: 20px;
-	color: #ffffff;
-	text-decoration: none;
-}
+	margin-left: auto;
+	margin-right: 10px;
 
-nav a:hover {
-	text-decoration: underline;
+	font-family: "Courier New";
+	font-size: 25px;
+	text-decoration: none;
+	color: #FFFFFF;
 }
 
 .active {
-	font-weight: bold;
-}
-
-address {
-	margin: 0 10% 0 10%;
-	padding: 0;
-
-	display: flex;
-	flex-direction: column;
-	gap: 5px;
-}
-
-address p {
-	margin: 0;
-	cursor: pointer;
-	font-size: 15px;
+	text-decoration: underline;
 }
 
 .copy-msg {
@@ -90,7 +90,7 @@ address p {
 	opacity: 0.85;
 	color: #ffffff;
 	border: none;
-	font-size: 15px;
+	font-size: 25px;
 
 	animation: fadein 0.2s;
 }
@@ -100,29 +100,48 @@ address p {
 	to {opacity: 0.85;}
 }
 
+hr {
+	width: calc(100% - 20px);
+	margin: 10px auto 10px auto;
+	fill: #FFFFFF;
+}
+
+address {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+address p {
+	margin-right: auto;
+	margin-left: auto;
+	font-family: "Courier New";
+	font-size: 20px;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
 .socials-box {
-	width: 100%;
-
-	margin: 0 auto 5% 0;
-	padding: 0px;
-
 	display: flex;
 	flex-direction: row;
-	gap: 10px;
+	gap: 5px;
+	justify-content: center;
 }
 
 .socials-box a img {
-	height: 30px;
+	height: 40px;
 }
 
 main {
 	flex: 1;
-	height: 100%;
+	height: calc(100% - 150px);
 	margin: 0;
 	overflow-y: auto;
 
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+
+	background-color: #EFE4D2;
 }
 
 section {
@@ -133,7 +152,7 @@ section {
 	gap: 10px;
 }
 
-article {
+article, aside {
 	width: calc(100% - 20px);
 	padding: 10px;
 
@@ -146,30 +165,17 @@ article {
 	gap: 5px;
 
 	font-family: 'Courier New';
+	font-size: 20px;
 	color: #000000;
 }
 
-aside {
-	width: 30%;
-	margin: 20px 20px auto 0;
-	padding: 10px;
-
-	background-color: #ffffff;
-	border: none;
-	border-radius: 10px;
-
-	display: flex;
-	flex-direction: column;
-	gap: 5px;
-
-	font-family: 'Courier New';
-	color: #000000;
-}
-
-h2 {
+h2, h3, p {
 	margin: 0;
-	font-size: 25px;
-	cursor: default;
+}
+
+ul {
+	padding-inline-start: 20px;
+	margin: 0;
 }
 
 button {
@@ -182,7 +188,7 @@ button {
 	color: #ffffff;
 
 	font-family: 'Courier New';
-	font-size: 15px;
+	font-size: 22px;
 
 	cursor: pointer;
 }
@@ -191,39 +197,11 @@ button:hover {
 	background-color: #131D4F;
 }
 
-p {
-	margin: 0;
-	font-size: 15px;
-}
-
-h3 {
-	margin: 0;
-	font-size: 20px;
-}
-
-ul {
-	margin: 0;
-	list-style: square;
-}
-
-li + li {
-	margin-top: 10px;
-}
-
-li ul li {
-	margin: 0;
-}
-
 h1 {
 	margin: 0;
 	font-family: 'Courier New';
 	font-size: 30px;
 	color: #000000;
-}
-
-hr {
-	width: 100%;
-	border: 2px solid #000000;
 }
 
 .title-div {
@@ -245,4 +223,95 @@ hr {
 
 .hidden-content {
 	width: 100%;
+}
+
+@media (min-width: 750px) {
+	header{
+		min-height: 75px;
+	}
+
+	.visible-header {
+		height: 75px;
+	}
+
+	.hidden-menu {
+		flex-direction: row-reverse;
+		align-items: center;
+	}
+
+	.menu-hr {
+		display: none;
+	}
+
+	address p {
+		min-width: 300px;
+		margin-left: 10px;
+	}
+
+	.socials-box {
+		margin-left: 10px;
+		justify-content: left;
+	}
+
+	main {
+		height: calc(100% - 75px);
+	}
+}
+
+@media (min-width: 1200px) {
+	body {
+		display: flex;
+		flex-direction: row;
+	}
+
+	header {
+		width: 300px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.visible-header {
+		margin-top: 100px;
+		margin-bottom: 100px;
+		height: auto;
+	}
+
+	header h1 {
+		width: 100%;
+	}
+
+	header h1 a {
+		font-size: 50px;
+	}
+
+	.menu-icon, .cancel-icon {
+		display: none;
+	}
+
+	.hidden-menu {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+		justify-content: space-between;
+	}
+
+	nav a {
+		margin-left: 10px;
+		margin-right: auto;
+	}
+
+	main {
+		height: 100%;
+		width: calc(100% - 300px);
+		flex-direction: row;
+	}
+
+	.aside-section {
+		width: 250px;
+	}
+
+	aside {
+		width: 230px;
+	}
 }

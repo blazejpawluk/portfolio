@@ -9,28 +9,48 @@
 
 	<body>
 		<header>
-			<h1><a href="index.html" tabindex="1">Błażej Pawluk</a></h1>
-			<nav>
-				<a href="index.html" tabindex="2">strona główna</a>
-				<a href="cv.html" tabindex="3">cv</a>
-				<a href="projects.html" tabindex="4">projekty</a>
-				<a href="hobbies.html" class="active" tabindex="5">zainteresowania</a>
-			</nav>
-	
-			<address>
-				<p id="email" tabindex="6">✉️ bpawluk05@gmail.com</p>
-				<div class="copy-msg" id="copy-msg-email">Email skopiowany do schowka.</div>
-				
-				<p id="phone" tabindex="7">📞 +48 607 633 205</p>
-				<div class="copy-msg" id="copy-msg-phone">Numer telefonu skopiowany do schowka.</div>
+			<div class="visible-header">
+				<h1><a href="index.html" tabindex="1">Błażej Pawluk</a></h1>
 
-				<div class="socials-box">
-					<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100023762712516" tabindex="8"><img src="icons/facebook.png" alt="Facebook"></a>
-					<a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/blazej.16/" tabindex="9"><img src="icons/instagram.png" alt="Instagram"></a>
-					<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/błażej-pawluk-67831132a/" tabindex="10"><img src="icons/linkedin.png" alt="LinkedIn"></a>
-					<a target="_blank" rel="noopener noreferrer" href="https://github.com/blazejpawluk"  tabindex="11"><img src="icons/github.png" alt="GitHub"></a>
-				</div>
-			</address>
+				<svg class="menu-icon" id="menu" viewBox="0 0 24 24">
+					<polygon points="2,6 22,6 22,8 2,8"/>
+					<polygon points="2,11 22,11 22,13 2,13"/>
+					<polygon points="2,16 22,16 22,18 2,18"/>
+				</svg>
+
+				<svg class="cancel-icon" id="cancel" viewBox="0 0 24 24">
+					<polygon points="2,11 22,11 22,13 2,13" transform="rotate(45 12 12)"/>
+					<polygon points="2,11 22,11 22,13 2,13" transform="rotate(-45 12 12)"/>
+				</svg>
+			</div>
+
+			<hr id="hr1" style="display: none"/>
+
+			<div id="hidden-menu" class="hidden-menu">
+				<nav id="nav">
+					<a href="index.html" tabindex="2">strona główna</a>
+					<a href="cv.html" tabindex="3">cv</a>
+					<a href="projects.html" tabindex="4">projekty</a>
+					<a class="active" href="hobbies.html" tabindex="5">zainteresowania</a>
+				</nav>
+		
+				<hr id="hr2" class="menu-hr"/>
+	
+				<address id="address">
+					<p id="email" tabindex="6">✉️ bpawluk05@gmail.com</p>
+					<div class="copy-msg" id="copy-msg-email">Email skopiowany do schowka.</div>
+					
+					<p id="phone" tabindex="7">📞 +48 607 633 205</p>
+					<div class="copy-msg" id="copy-msg-phone">Numer telefonu skopiowany do schowka.</div>
+	
+					<div class="socials-box">
+						<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100023762712516" tabindex="8"><img src="icons/facebook.png" alt="Facebook"></a>
+						<a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/blazej.16/" tabindex="9"><img src="icons/instagram.png" alt="Instagram"></a>
+						<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/błażej-pawluk-67831132a/" tabindex="10"><img src="icons/linkedin.png" alt="LinkedIn"></a>
+						<a target="_blank" rel="noopener noreferrer" href="https://github.com/blazejpawluk"  tabindex="11"><img src="icons/github.png" alt="GitHub"></a>
+					</div>
+				</address>
+			</div>
 		</header>
 	
 		<main>
