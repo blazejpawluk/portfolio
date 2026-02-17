@@ -1,0 +1,58 @@
+.hidden {
+	display: none;
+}
+
+.active-page {
+	font-weight: bold;
+}
+
+/* animacja menu */
+@keyframes slideIn {
+	from {
+		transform: translateX(-100%);
+		opacity: 0.6;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes slideOut {
+	from {
+		transform: translateX(0);
+		opacity: 1;
+	}
+	to {
+		transform: translateX(-100%);
+		opacity: 0.6;
+	}
+}
+
+#menu-nav.is-open {
+	animation: slideIn 0.35s ease forwards;
+}
+
+#menu-nav.is-closing {
+	animation: slideOut 0.35s ease forwards;
+}
+
+/* animacja ikon */
+@keyframes iconOpen {
+	from { opacity: 0; transform: rotate(-90deg) scale(0.8); }
+	to { opacity: 1; transform: rotate(0) scale(1); }
+}
+
+@keyframes iconClose {
+	from { opacity: 1; transform: rotate(0) scale(1); }
+	to { opacity: 0; transform: rotate(90deg) scale(0.8); }
+}
+
+.menu-icon svg.is-open {
+	animation: iconOpen 0.3s ease forwards;
+}
+
+.menu-icon svg.is-closing {
+	animation: iconClose 0.3s ease forwards;
+}
+

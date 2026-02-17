@@ -4,57 +4,63 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Błażej Pawluk</title>
-		<link rel="stylesheet" href="style/style-main.css">
+		<link rel="stylesheet" href="style/main.css">
+		<link rel="stylesheet" href="style/header.css">
 	</head>
 
 	<body>
 		<header>
-			<div class="visible-header">
-				<h1><a href="index.html" tabindex="1">Błażej Pawluk</a></h1>
-
-				<svg class="menu-icon" id="menu" viewBox="0 0 24 24">
-					<polygon points="2,6 22,6 22,8 2,8"/>
-					<polygon points="2,11 22,11 22,13 2,13"/>
-					<polygon points="2,16 22,16 22,18 2,18"/>
+			<div class="menu-icon">
+				<svg id="header-closed-icon"
+					width="40" height="40"
+					viewBox="0 0 40 40">
+					<line x1="0" y1="4" x2="40" y2="4"
+						fill="none"
+						stroke="white"
+						stroke-width="8px"
+					/>
+					<line x1="0" y1="20" x2="40" y2="20"
+						fill="none"
+						stroke="white"
+						stroke-width="8px"
+					/>
+					<line x1="0" y1="36" x2="40" y2="36"
+						fill="none"
+						stroke="white"
+						stroke-width="8px"
+					/>
 				</svg>
-
-				<svg class="cancel-icon" id="cancel" viewBox="0 0 24 24">
-					<polygon points="2,11 22,11 22,13 2,13" transform="rotate(45 12 12)"/>
-					<polygon points="2,11 22,11 22,13 2,13" transform="rotate(-45 12 12)"/>
+	
+				<svg id="header-open-icon"
+					width="40" height="40"
+					viewBox="0 0 40 40"
+					class="hidden">
+					<line x1="0" y1="0" x2="40" y2="40"
+						fill="none"
+						stroke="white"
+						stroke-width="8px"
+					/>
+					<line x1="40" y1="0" x2="0" y2="40"
+						fill="none"
+						stroke="white"
+						stroke-width="8px"
+					/>
 				</svg>
 			</div>
 
-			<hr id="hr1" style="display: none"/>
-
-			<div id="hidden-menu" class="hidden-menu">
-				<nav id="nav">
-					<a class="active" href="index.html" tabindex="2">strona główna</a>
-					<a href="cv.html" tabindex="3">cv</a>
-					<a href="projects.html" tabindex="4">projekty</a>
-					<a href="hobbies.html" tabindex="5">zainteresowania</a>
-				</nav>
-		
-				<hr id="hr2" class="menu-hr"/>
-	
-				<address id="address">
-					<p id="email" tabindex="6">✉️ bpawluk05@gmail.com</p>
-					<div class="copy-msg" id="copy-msg-email">Email skopiowany do schowka.</div>
-					
-					<p id="phone" tabindex="7">📞 +48 607 633 205</p>
-					<div class="copy-msg" id="copy-msg-phone">Numer telefonu skopiowany do schowka.</div>
-	
-					<div class="socials-box">
-						<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100023762712516" tabindex="8"><img src="icons/facebook.png" alt="Facebook"></a>
-						<a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/blazej.16/" tabindex="9"><img src="icons/instagram.png" alt="Instagram"></a>
-						<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/błażej-pawluk-67831132a/" tabindex="10"><img src="icons/linkedin.png" alt="LinkedIn"></a>
-						<a target="_blank" rel="noopener noreferrer" href="https://github.com/blazejpawluk"  tabindex="11"><img src="icons/github.png" alt="GitHub"></a>
-					</div>
-				</address>
-			</div>
+			<nav id="menu-nav" class="hidden">
+				<ul>
+					<li class="active-page"><a href="index.html">Strona główna</a></li>
+					<li><a>CV</a></li>
+					<li><a>Projekty</a></li>
+					<li><a>Zainteresowania</a></li>
+					<li><a href="contact.html">Kontakt</a></li>
+				</ul>
+			</nav>
 		</header>
-	
-		<main>
-			
+
+		<main id="main">
+
 		</main>
 	</body>
 
