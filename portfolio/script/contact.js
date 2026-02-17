@@ -1,5 +1,6 @@
 const phoneIcon = document.getElementById('phone-icon');
 const emailIcon = document.getElementById('email-icon');
+const addressIcon = document.getElementById('address-icon');
 const facebookIcon = document.getElementById('facebook-icon');
 const instagramIcon = document.getElementById('instagram-icon');
 const linkedinIcon = document.getElementById('linkedin-icon');
@@ -64,6 +65,37 @@ const emailClick = async () => {
 emailIcon.addEventListener('click', emailClick);
 emailIcon.addEventListener('keypress', (e) => {
 	if (e.key == 'Enter') emailClick();
+});
+
+const addressClick = async () => {
+	try {
+		await navigator.clipboard.writeText('ul. Leśna 25, 55-330, Lutynia');
+
+		const textEl = document.getElementById('address-text');
+		textEl.classList.add('fade-out');
+		setTimeout(() => {
+			textEl.textContent = 'Skopiowano do schowka';
+			textEl.classList.remove('fade-out');
+			textEl.classList.add('fade-in');
+			setTimeout(() => {
+				textEl.classList.remove('fade-in');
+				textEl.classList.add('fade-out');
+				setTimeout(() => {
+					textEl.textContent = 'ul. Leśna 25, 55-330, Lutynia';
+					textEl.classList.remove('fade-out');
+					textEl.classList.add('fade-in');
+					setTimeout(() => {
+						textEl.classList.remove('fade-in');
+					}, 300);
+				}, 300);
+			}, 3000);
+		}, 300);
+	} catch (error) {console.error('Błąd kopiowania:', err);}
+}
+
+addressIcon.addEventListener('click', addressClick);
+addressIcon.addEventListener('keypress', (e) => {
+	if (e.key == 'Enter') addressClick();
 });
 
 facebookIcon.addEventListener('click', () => {

@@ -6,6 +6,7 @@
 	--main-background: #F6FFFF;
 	--main-title-color: #593100;
 	--main-title-color-sec: #331C00;
+	--main-sec-color: #003300;
 }
 
 ::selection {
@@ -144,6 +145,13 @@ article h3 {
 	color: var(--main-title-color-sec);
 }
 
+article h4 {
+	margin: 0;
+	font-family: 'Courier New';
+	font-size: 25px;
+	color: var(--main-title-color-sec);
+}
+
 article ul {
 	list-style: none;
 	padding: 0 10px;
@@ -154,12 +162,34 @@ article ul {
 
 article li {
 	width: 100%;
-	cursor: pointer;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	gap: 5px;
+	font-family: 'Courier New';
+	font-size: 20px;
+	color: var(--main-title-color-sec);
+}
+
+article p {
+	margin: 0;
+	padding: 0 10px;
 	gap: 5px;
 	align-items: center;
 	font-family: 'Courier New';
 	font-size: 20px;
 	color: var(--main-title-color-sec);
+	text-align: justify;
+}
+
+.go-to-button {
+	padding: 10px 20px;
+	margin: 0;
+	background-color: var(--main-sec-color);
+	color: var(--main-background);
+	font-family: 'Courier New';
+	font-size: 20px;
+	text-decoration: none;
+	text-align: center;
+	width: min(260px, calc(100% - 40px));
+	cursor: pointer;
 }

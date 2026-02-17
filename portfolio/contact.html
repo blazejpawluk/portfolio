@@ -15,7 +15,7 @@
 				<svg id="header-closed-icon"
 					width="40" height="40"
 					viewBox="0 0 40 40"
-					tabindex="0">
+					tabindex="1">
 					<line x1="0" y1="4" x2="40" y2="4"
 						fill="none"
 						stroke="white"
@@ -37,7 +37,7 @@
 					width="40" height="40"
 					viewBox="0 0 40 40"
 					class="hidden"
-					tabindex="1">
+					tabindex="2">
 					<line x1="0" y1="0" x2="40" y2="40"
 						fill="none"
 						stroke="white"
@@ -53,11 +53,11 @@
 
 			<nav id="menu-nav" class="hidden">
 				<ul>
-					<li><a href="index.html" tabindex="2">Strona główna</a></li>
-					<li><a tabindex="3">CV</a></li>
-					<li><a tabindex="4">Projekty</a></li>
-					<li><a tabindex="5">Zainteresowania</a></li>
-					<li class="active-page"><a href="contact.html" tabindex="6">Kontakt</a></li>
+					<li><a href="index.html" tabindex="3">Strona główna</a></li>
+					<li><a href="cv.html" tabindex="4">CV</a></li>
+					<li><a tabindex="5">Projekty</a></li>
+					<li><a tabindex="6">Zainteresowania</a></li>
+					<li class="active-page"><a href="contact.html" tabindex="7">Kontakt</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -73,7 +73,7 @@
 				<article>
 					<h3>Dane kontaktowe</h3>
 					<ul>
-						<li id="phone-icon" tabindex="7">
+						<li id="phone-icon" tabindex="8" style="flex-direction: row; align-items: center; cursor: pointer;">
 							<svg
 								width="48" height="48" 
 								fill="#003300" 
@@ -82,7 +82,7 @@
 							</svg>
 							<span id="phone-text">+48 607 633 205</span>
 						</li>
-						<li id="email-icon" tabindex="8">
+						<li id="email-icon" tabindex="9" style="flex-direction: row; align-items: center; cursor: pointer;">
 							<svg
 								width="48" height="48"
 								viewBox="0 0 24 24"
@@ -91,13 +91,24 @@
 							</svg>
 							<span id="email-text">bpawluk05@gmail.com</span>
 						</li>
+						<li id="address-icon" tabindex="9" style="flex-direction: row; align-items: center; cursor: pointer;">
+							<svg
+								width="48" height="48"
+								viewBox="0 0 24 24"
+								fill="none" stroke="#003300"
+								stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+								<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+								<circle cx="12" cy="10" r="3"></circle>
+							</svg>
+							<span id="address-text">ul. Leśna 25, 55-330, Lutynia</span>
+						</li>
 					</ul>
 				</article>
 
 				<article>
 					<h3>Media</h3>
 					<ul>
-						<li id="facebook-icon" tabindex="9">
+						<li id="facebook-icon" tabindex="10" style="flex-direction: row; align-items: center; cursor: pointer;">
 							<svg 
 								width="48" height="48" 
 								fill="#003300" 
@@ -106,7 +117,7 @@
 							</svg>
 							Facebook
 						</li>
-						<li id="instagram-icon" tabindex="10">
+						<li id="instagram-icon" tabindex="11" style="flex-direction: row; align-items: center; cursor: pointer;">
 							<svg
 								width="48" height="48"
 								fill="none"
@@ -115,7 +126,7 @@
 							</svg>
 							Instagram
 						</li>
-						<li id="linkedin-icon" tabindex="11">
+						<li id="linkedin-icon" tabindex="12" style="flex-direction: row; align-items: center; cursor: pointer;">
 							<svg
 								width="48" height="48"
 								fill="#003300"
@@ -125,7 +136,7 @@
 							</svg>
 							LinkedIn
 						</li>
-						<li id="github-icon" tabindex="12">
+						<li id="github-icon" tabindex="13" style="flex-direction: row; align-items: center; cursor: pointer;">
 							<svg
 								width="48" height="48"
 								fill="#003300"

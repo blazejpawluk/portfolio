@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Błażej Pawluk</title>
+		<link rel="stylesheet" href="style/main.css">
+		<link rel="stylesheet" href="style/header.css">
+		<link rel="stylesheet" href="style/contact.css">
+	</head>
+
+	<body>
+		<header>
+			<div class="menu-icon">
+				<svg id="header-closed-icon"
+					width="40" height="40"
+					viewBox="0 0 40 40"
+					tabindex="1">
+					<line x1="0" y1="4" x2="40" y2="4"
+						fill="none"
+						stroke="white"
+						stroke-width="8px"
+					/>
+					<line x1="0" y1="20" x2="40" y2="20"
+						fill="none"
+						stroke="white"
+						stroke-width="8px"
+					/>
+					<line x1="0" y1="36" x2="40" y2="36"
+						fill="none"
+						stroke="white"
+						stroke-width="8px"
+					/>
+				</svg>
+	
+				<svg id="header-open-icon"
+					width="40" height="40"
+					viewBox="0 0 40 40"
+					class="hidden"
+					tabindex="2">
+					<line x1="0" y1="0" x2="40" y2="40"
+						fill="none"
+						stroke="white"
+						stroke-width="8px"
+					/>
+					<line x1="40" y1="0" x2="0" y2="40"
+						fill="none"
+						stroke="white"
+						stroke-width="8px"
+					/>
+				</svg>
+			</div>
+
+			<nav id="menu-nav" class="hidden">
+				<ul>
+					<li><a href="index.html" tabindex="3">Strona główna</a></li>
+					<li class="active-page"><a href="cv.html" tabindex="4">CV</a></li>
+					<li><a tabindex="5">Projekty</a></li>
+					<li><a tabindex="6">Zainteresowania</a></li>
+					<li><a href="contact.html" tabindex="7">Kontakt</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="main">
+			<section id="page-title">
+				<h1>Błażej Pawluk</h1>
+				<h2>CV</h2>
+				<button class="go-to-button" onClick="downloadCV()" tabindex="12">Pobierz PDF</button>
+				<hr/>
+			</section>
+
+			<section id="page-main-container">
+				<article>
+					<h3>Profil</h3>
+					<p>Student na drugim roku studiów informatycznych na Politechnice Wrocławskiej. Szukam praktyk w branży IT, które umożliwią mi rozwój i zdobycie cennego doświadczenia zawodowego. Pracowity, pozytywnie nastawiony, chętny do nauki oraz rozwijania swoich umiejętności. </p>
+				</article>
+				
+				<article>
+					<h3>Doświadczenie zawodowe</h3>
+					<ul>
+						<li>
+							<h4>SENTE SP. ZO.O.</h4>
+							<b>praktyki</b>
+							<b>wrzesień 2024</b>
+							<p>praca na dużych bazach danych,</p>
+							<p>tworzenie oprogramowania do zarządzania dużymi bazami danych,</p>
+							<p>ukończone szkolenie z SQL,</p>
+							<p>ukończone szkolenie z systemów ARP</p>
+						</li>
+						<li>
+							<h4>Piekarnia Jul-Ka</h4>
+							<b>praca dorywcza jako pomoc w sklepie</b>
+							<b>sierpień 2025 - obecnie</b>
+							<p>obsługa kasy fiskalnej</p>
+							<p>kontakt z klientem</p>
+						</li>
+					</ul>
+				</article>
+				
+				<article>
+					<h3>Edukacja</h3>
+					<ul>
+						<li>
+							<h4>Politechnika Wrocławska</h4>
+							<b>Informatyka Algorytmiczna, stacjonarne, pierwszego stopnia</b>
+							<b>październik 2023 - obecnie</b>
+						</li>
+						<li>
+							<h4>Liceum Ogólnokształcące nr 3 we Wrocławiu</h4>
+							<b>profil matematyczno-fizyczno-informatyczny</b>
+							<b>wrzesień 2019 - maj 2023</b>
+						</li>
+					</ul>
+				</article>
+				
+				<article>
+					<h3>Umiejętności</h3>
+					<ul>
+						<li>tworzenie dużych projektów,</li>
+						<li>zarządzanie projektami zespołowymi,</li>
+						<li>rozwiązywanie problemów algorytmicznych,</li>
+						<li><p>projektowanie, tworzenie i obsługa baz danych (<b>MariaBD, PostgreSQL</b>), API (<b>Django, Node.js</b>), stron internetowych (<b>HTML, CSS, React</b>),</p></li>
+						<li><p>
+							programowanie w językach programowania:<br/>
+							<b>C, C++, Java, SQL</b> - poziom zaawansowany,<br/>
+							<b>Python, Julia, JavaScript</b> - poziom średniozaawansowany,<br/>
+							<b>Haskell, C#</b> - poziom podstawowy,
+						</p></li>
+						<li>praca na systemach Windows i Linux,</li>
+						<li>zaawansowana obsługa programów pakietu Office</li>
+					</ul>
+				</article>
+				
+				<article>
+					<h3>Certyfikaty, osiągnięcia</h3>
+					<ul>
+						<li>Stypendium dla wybitnie uzdolnionych Politechniki Wrocławskiej;</li>
+						<li>Certyfikat B2 First, Cambridge (ocena A - poziom C1), 2024,</li>
+						<li>Studium Talent Politechniki Wrocławskiej z matematyki - ocena dobra,</li>
+						<li><p>
+							Matura:<br/>
+							informatyka - 100%,<br/>
+							matematyka - 94% (p. rozszerzony), 100% (p.podstawowy),
+						</p></li>
+						<li>Kurs szybkiego czytania i efektywnej nauki, Europejski Instytut Edukacji Engram, 2018</li>
+					</ul>
+				</article>
+
+				<article>
+					<h3>Języki</h3>
+					<ul>
+						<li><p><b>angielski</b> - zaawansowany,</p></li>
+						<li><p><b>hiszpański</b> - podstawowy,</p></li>
+						<li><p><b>niemiecki</b> - podstawowy,</p></li>
+						<li><p><b>polski</b> - ojczysty</p></li>
+					</ul>
+				</article>
+
+				<article>
+					<h3>Inne</h3>
+					<ul>
+						<li>prawo jazdy, kat. B</li>
+					</ul>
+				</article>
+
+				<article>
+					<h3>Kontakt</h3>
+					<ul>
+						<li id="phone-icon" tabindex="8" style="flex-direction: row; align-items: center; cursor: pointer;">
+							<svg
+								width="48" height="48" 
+								viewBox="0 0 24 24"
+								fill="none" stroke="#003300" 
+								stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+								<path d="M7.978 4a2.553 2.553 0 0 0-1.926.877C4.233 6.7 3.699 8.751 4.153 10.814c.44 1.995 1.778 3.893 3.456 5.572 1.68 1.679 3.577 3.018 5.57 3.459 2.062.456 4.115-.073 5.94-1.885a2.556 2.556 0 0 0 .001-3.861l-1.21-1.21a2.689 2.689 0 0 0-3.802 0l-.617.618a.806.806 0 0 1-1.14 0l-1.854-1.855a.807.807 0 0 1 0-1.14l.618-.62a2.692 2.692 0 0 0 0-3.803l-1.21-1.211A2.555 2.555 0 0 0 7.978 4Z"/>
+							</svg>
+							<span id="phone-text">+48 607 633 205</span>
+						</li>
+						<li id="email-icon" tabindex="9" style="flex-direction: row; align-items: center; cursor: pointer;">
+							<svg
+								width="48" height="48"
+								viewBox="0 0 24 24"
+								fill="none">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 5.25L3 6V18L3.75 18.75H20.25L21 18V6L20.25 5.25H3.75ZM4.5 7.6955V17.25H19.5V7.69525L11.9999 14.5136L4.5 7.6955ZM18.3099 6.75H5.68986L11.9999 12.4864L18.3099 6.75Z" fill="#003300"></path>
+							</svg>
+							<span id="email-text">bpawluk05@gmail.com</span>
+						</li>
+						<li id="address-icon" tabindex="10" style="flex-direction: row; align-items: center; cursor: pointer;">
+							<svg
+								width="48" height="48"
+								viewBox="0 0 24 24"
+								fill="none" stroke="#003300"
+								stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+								<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+								<circle cx="12" cy="10" r="3"></circle>
+							</svg>
+							<span id="address-text">ul. Leśna 25, 55-330, Lutynia</span>
+						</li>
+						<li>
+							<a class="go-to-button" href="contact.html" tabindex="11">Przejdź do kontaktu</a>
+						</li>
+					</ul>
+				</article>
+			</section>
+		</main>
+	</body>
+
+	<script src="script/header.js"></script>
+	<script src="script/contact.js"></script>
+	<script src="script/cv.js"></script>
+</html>
